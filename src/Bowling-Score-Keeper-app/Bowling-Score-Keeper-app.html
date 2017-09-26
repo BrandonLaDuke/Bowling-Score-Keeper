@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="Bowling-Score-Keeper-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class BowlingScoreKeeperApp extends Polymer.Element {
+      static get is() { return 'Bowling-Score-Keeper-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'Bowling-Score-Keeper-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(BowlingScoreKeeperApp.is, BowlingScoreKeeperApp);
+  </script>
+</dom-module>
